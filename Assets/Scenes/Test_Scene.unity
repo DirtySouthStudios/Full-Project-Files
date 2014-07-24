@@ -264,7 +264,7 @@ BoxCollider:
     type: 2}
   m_PrefabInternal: {fileID: 920414067}
   m_GameObject: {fileID: 534645055}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c8bb83103cdd0d849b97940cf85210dc, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -869,7 +869,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: .963235319, g: .835748255, b: .835748255, a: .670588255}
+  m_Color: {r: .75, g: .75, b: .75, a: .619607866}
   m_Intensity: .5
   m_Range: 10
   m_SpotAngle: 30

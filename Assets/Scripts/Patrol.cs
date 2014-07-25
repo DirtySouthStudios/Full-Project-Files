@@ -28,20 +28,20 @@ public class Patrol : GameManager {
 
 	void Start () {
 
-		//if (currentLevel == 0) {
+
 			_playerTransform = GameObject.FindGameObjectWithTag ("Player").transform;
 			_transform = transform;
 
 			UpdateMovement ();
-		//}
 
-		/*if (currentLevel == 1) {
+
+
 			//Locate Patrol Points
 			transform.position = patrolPoints [0].position;
 			currentPoint = 0;
-		}
 
-		if (currentLevel == 2) {
+
+
 			// Locate Player
 			GameObject player = GameObject.FindGameObjectWithTag("Player");
 			target = player.transform;
@@ -52,30 +52,29 @@ public class Patrol : GameManager {
 			// Enemy Current Position
 			GameObject enemy = this.gameObject;
 			enemyTransform = enemy.transform;
-		}*/
 	}
 	
 
 	void Update () {
 
-		//if (currentLevel == 0) {
-			if (_isWaiting)
+
+			/*if (_isWaiting)
 					return;
 
 			_transform.position += _forward * moveSpeed * Time.deltaTime;
 
 			if (Vector3.Dot (_forward, _targetPosition - _transform.position) < 0) {
 					StartCoroutine (Wait ());
-			}
-		//}
+			}*/
 
-		/*if (currentLevel == 1) {
+
+			/*
 			// Follow Player Indefinitely [Works]
 			transform.LookAt (target);
 			enemyTransform.position += enemyTransform.forward * moveSpeed * Time.deltaTime;
-		}
+			*/
 
-		if (currentLevel == 2) {
+			
 			// Array Point Navigation [Works]
 			if (transform.position == patrolPoints [currentPoint].position) {
 					currentPoint ++;
@@ -86,7 +85,6 @@ public class Patrol : GameManager {
 			}
 
 			transform.position = Vector3.MoveTowards (transform.position, patrolPoints [currentPoint].position, moveSpeed * Time.deltaTime);
-		}*/
 	}
 
 	// Updates player position and calculates the overshot position

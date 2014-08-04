@@ -10,14 +10,19 @@ using System.Collections;
 public class RotateCam : MonoBehaviour {
 
 	public GameObject targetObject;
+	private Vector3 playerPos;
 	private float targetAngle = 0;
 	const float rotationAmount = 1.5f;
 	public float rDistance = 1.0f;
 	public float rSpeed = 1.0f;
-	
+
+
 	// Update is called once per frame
 	void Update()
 	{
+
+		playerPos.x = targetObject.transform.position.x;
+		playerPos.y = targetObject.transform.position.y;
 		
 		// Trigger functions if Rotate is requested
 		if (Input.GetKeyDown(KeyCode.Q)) {
@@ -42,12 +47,12 @@ public class RotateCam : MonoBehaviour {
 		
 		if (targetAngle>0)
 		{
-			transform.RotateAround(targetObject.transform.position, Vector3.up, -rotationAmount);
+			transform.RotateAround(playerPos, Vector3.up, -rotationAmount);
 			targetAngle -= rotationAmount;
 		}
 		else if(targetAngle <0)
 		{
-			transform.RotateAround(targetObject.transform.position, Vector3.up, rotationAmount);
+			transform.RotateAround(playerPos, Vector3.up, rotationAmount);
 			targetAngle += rotationAmount;
 		}
 		

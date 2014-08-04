@@ -484,6 +484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 25
   deathParticles: {fileID: 100000, guid: fa557674cb598b04da374b90a169eec2, type: 2}
+  rSpeed: 1
 --- !u!54 &606436240
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -663,7 +664,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1855b47a2206c0345aeddaed5cc504ba, type: 2}
   m_RootGameObject: {fileID: 606436234}
   m_IsPrefabParent: 0
@@ -785,7 +787,6 @@ GameObject:
   - 92: {fileID: 1019977554}
   - 124: {fileID: 1019977553}
   - 81: {fileID: 1019977552}
-  - 114: {fileID: 1019977557}
   - 114: {fileID: 1019977558}
   m_Layer: 0
   m_Name: Main Camera
@@ -863,21 +864,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 606436238}
   m_RootOrder: 0
---- !u!114 &1019977557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 1855b47a2206c0345aeddaed5cc504ba,
-    type: 2}
-  m_PrefabInternal: {fileID: 806839873}
-  m_GameObject: {fileID: 1019977551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e87fe694dcecc6c44bb14977e9de8d67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 606436234}
-  rDistance: 1
-  rSpeed: 1
 --- !u!114 &1019977558
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -32,7 +32,6 @@ GameObject:
   - 92: {fileID: 9200000}
   - 124: {fileID: 12400000}
   - 81: {fileID: 8100000}
-  - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: Main Camera
@@ -179,19 +178,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 25
   deathParticles: {fileID: 100000, guid: fa557674cb598b04da374b90a169eec2, type: 2}
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e87fe694dcecc6c44bb14977e9de8d67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 100000}
-  rDistance: 1
   rSpeed: 1
 --- !u!114 &11400004
 MonoBehaviour:

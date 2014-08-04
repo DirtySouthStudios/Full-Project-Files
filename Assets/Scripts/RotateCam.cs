@@ -27,10 +27,12 @@ public class RotateCam : MonoBehaviour {
 		// Trigger functions if Rotate is requested
 		if (Input.GetKeyDown(KeyCode.Q)) {
 			targetAngle -= 90.0f;
-		} else if (Input.GetKeyDown(KeyCode.E)) {
+		} 
+		if (Input.GetKeyDown(KeyCode.E)) {
 			targetAngle += 90.0f;
 		}
 		
+	
 		if(targetAngle !=0)
 		{
 			Rotate();

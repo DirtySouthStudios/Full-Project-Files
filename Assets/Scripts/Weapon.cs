@@ -40,6 +40,20 @@ public class Weapon : MonoBehaviour {
 		
 		RaycastHit hit;
 		Ray myRay = new Ray (firePointPosition, mousePostion);
+        ////////////////////////////////////////////////////
+	    RaycastHit[] hits;
+        Vector3 ray_point_onfloor;
+        hits = Physics.RaycastAll(firePointPosition mousePosition);
+        int i = 0;
+        while (i < hits.Length) {
+            RaycastHit hit = hits[i];
+
+            if (hit.tag == "floor") {
+                ray_point_onfloor= hit.point;
+				break;
+            }
+            i++;
+        }
 
 		Debug.DrawRay (firePointPosition, mousePostion);
 

@@ -29,8 +29,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.E)) {
 			targetAngle += 90.0f;
 		}
-		
-		
+
 		if(targetAngle !=0)
 		{
 			Rotate();

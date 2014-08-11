@@ -516,10 +516,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 0
-  damage: 10
   notToHit:
     serializedVersion: 2
     m_Bits: 0
+  firePointPosition: {fileID: 0}
+  mousePosition: {x: 0, y: 0, z: 0}
 --- !u!1 &688468807
 GameObject:
   m_ObjectHideFlags: 0

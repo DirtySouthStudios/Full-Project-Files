@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Update (){
+
 		startTime -= Time.deltaTime;
 		currentTime = string.Format("{0:0.00}", startTime) ;
 

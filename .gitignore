@@ -5,3 +5,5 @@ Temp/*
 *.pidb
 *.userprefs
 *.unityproj
+*.meta
+*/*.meta
